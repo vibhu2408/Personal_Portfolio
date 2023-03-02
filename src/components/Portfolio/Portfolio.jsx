@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import OurApp from "../../img/OurApp.gif";
+import StockSentimentAnalysis from "../../img/Stock Sentiment Analysis.gif";
+import HousePricePrediction from "../../img/HousePricePrediction.png";
+import DistractedDriverSystem from "../../img/Distracted Driver System.gif";
+import TwitterSentimentAnalysis from "../../img/Twitter Sentiment Analysis.gif";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -24,16 +25,19 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <img src={OurApp} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <img src={StockSentimentAnalysis} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <img src={HousePricePrediction} alt="" />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+          <img src={DistractedDriverSystem} alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+          <img src={TwitterSentimentAnalysis} alt="" />
         </SwiperSlide>
       </Swiper>
     </div>

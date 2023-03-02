@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import Mern from "../../img/Mern.jpg";
+import MachineLearning from "../../img/MachineLearning.png";
+import Innovation from "../../img/Innovation.png";
+import UiUx from "../../img/UiUx.png";
+import WebDevelopment from "../../img/WebDevelopment.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import {Link} from 'react-scroll'
@@ -21,18 +21,30 @@ const Works = () => {
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+            Work in All these
           </span>
-          <span>Brands & Clients</span>
-          <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+          <span>Technologies</span>
+          <spane style={{ fontSize: "0.75rem", fontFamily: "Helvetica, sans-serif", marginTop: "2rem" }}>
+          With a dynamic and diverse background that encompasses web development,
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            UI/UX design, MERN stack development, and machine learning,
             <br />
-            y dummy text of printingLorem
+            I possess a truly unique perspective and a rich tapestry of knowledge
             <br />
-            ispum is simpley dummy text of printing
+            that infuses every project with a sense of innovation and creativity.
+            <br /> 
+            Whether crafting user interfaces that are intuitive and seamless, or 
+            <br />
+            building robust machine learning models that push the boundaries of what's possible,
+            <br />
+            I thrive on the challenge of new and exciting opportunities.
+            <br />
+            With a passion for exploring cutting-edge solutions and a commitment to excellence, 
+            <br />
+            I bring an unwavering focus and an unwavering dedication to every project I undertake.
+            <br />
+            Join me on a journey of discovery and innovation, and 
+            let's push the boundaries of what's possible together!
           </spane>
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
@@ -54,19 +66,19 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={Mern} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={MachineLearning} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={Innovation} alt="" />
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={UiUx} alt="" />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={WebDevelopment} alt="" />
           </div>
         </motion.div>
         {/* background Circles */}

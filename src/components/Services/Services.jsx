@@ -26,10 +26,26 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
         <span>services</span>
-        <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
+        <spane style={{ fontSize: "0.75rem", fontFamily: "Helvetica, sans-serif", marginTop: "2rem" }}>
+        As a multi-talented individual with a diverse and multifaceted skill set, I bring a truly unique and dynamic
+        <br /> 
+        approach to problem-solving. With a powerful combination of development, design, and UI/UX expertise at my disposal,
+        <br /> 
+        I possess the tools and the vision necessary to tackle even the most complex and challenging projects with confidence
+        <br /> 
+        and creativity. Whether I'm crafting seamless and intuitive interfaces, building cutting-edge websites, optimizing 
+        <br />
+        user experiences, or exploring the exciting world of machine learning, I approach every challenge with an unwavering 
+        <br />
+        commitment to delivering the highest quality work and driving success for my clients. With an unrelenting passion for
+        heights of   
+        <br />
+        creativity and innovation. excellence and a keen eye for detail, I'm dedicated to achieving results that exceed 
+        <br />
+        expectations and inspire new So why settle for the ordinary when you can work with a true trailblazer and 
+        visionary? 
+        <br />
+        Let's embark on a journey of discovery together and unlock the full potential of your ideas!
         </spane>
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
@@ -46,8 +62,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"DataScience"}
+            detail={"MachineLearning, DeepLearning, DataVisualization"}
           />
         </motion.div>
         {/* second card */}
@@ -70,9 +86,9 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Coder"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "C/C++, Java, Python, JavaScript, MySql, PHP"
             }
             color="rgba(252, 166, 31, 0.45)"
           />

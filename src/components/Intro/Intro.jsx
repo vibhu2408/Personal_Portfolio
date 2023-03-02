@@ -7,9 +7,9 @@ import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
 import crown from "../../img/crown.png";
 import FloatinDiv from "../FloatingDiv/FloatingDiv";
-import Github from "../../img/github.png";
-import LinkedIn from "../../img/linkedin.png";
-import Instagram from "../../img/instagram.png";
+import Github from "../../img/github1.png";
+import LinkedIn from "../../img/linkedin1.png";
+import Leetcode from "../../img/leetcode.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
@@ -28,21 +28,21 @@ const Intro = () => {
         <div className="i-name">
           {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? "white" : "" }}>Hy! I Am</span>
-          <span>Andrew Thomas</span>
-          <span>
-            Frontend Developer with high level of experience in web designing
-            and development, producting the Quality work
+          <span>Vaibhav Gupta</span>
+          <span style={{ fontSize: "1.2rem", fontFamily: "Helvetica, sans-serif", marginTop: "2rem" }}> 
+            I am a passionate problem solver and tech enthusiast with a strong foundation in computer science. Through my diverse experience in various programming languages and technologies, I am able to adapt quickly and excel in any role. 
+            Let's explore my projects and skills together.
           </span>
         </div>
         <Link to="contact" smooth={true} spy={true}>
           <button className="button i-button">Hire me</button>
         </Link>
         {/* social icons */}
-        <div className="i-icons">
-          <img src={Github} alt="" />
-          <img src={LinkedIn} alt="" />
-          <img src={Instagram} alt="" />
-        </div>
+      <div className="i-icons">
+        <a href="https://github.com/vibhu2408"><img src={Github} alt="" /></a>
+        <a href="https://www.linkedin.com/in/vaibhav-gupta-4982911ba/"><img src={LinkedIn} alt="" /></a>
+        <a href="https://leetcode.com/vibhu_24/"><img src={Leetcode} alt="" /></a>
+      </div>
       </div>
       {/* right image side */}
       <div className="i-right">
@@ -64,7 +64,7 @@ const Intro = () => {
           transition={transition}
           className="floating-div"
         >
-          <FloatinDiv img={crown} text1="Web" text2="Developer" />
+          <FloatinDiv img={crown} text1="Software" text2="Developer" />
         </motion.div>
 
         {/* animation */}
@@ -75,7 +75,7 @@ const Intro = () => {
           className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
+          <FloatinDiv img={thumbup} text1="Coding" text2="Enthusiast" />
         </motion.div>
 
         <div className="blur" style={{ background: "rgb(238 210 255)" }}></div>
